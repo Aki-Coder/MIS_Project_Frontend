@@ -1,0 +1,57 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title">Studenti na predmetu</h4>
+                    </div>
+                    <div class="card-body">
+                      <div class="table-responsive">
+                        <table class="table">
+                            <thead class=" text-primary">
+                                <th style="color:#7a7a52;">
+                                    ID
+                                </th>
+                                <th style="color:#7a7a52;">
+                                    Broj indexa
+                                </th>
+                                <th style="color:#7a7a52;">
+                                    Ime
+                                </th>
+                                <th style="color:#7a7a52;">
+                                    Prezime
+                                </th>
+                                <th style="color:#7a7a52;">
+                                    Jmbg
+                                </th>
+                                
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let stud of students">
+                                    <td>
+                                        {{stud.idStudent}} 
+                                    </td>
+                                    <td>
+                                        {{stud.brojIndexa}}
+                                    </td>
+                                    <td>
+                                        {{stud.ime}}
+                                    </td>
+                                    <td>
+                                        {{stud.prezime}}
+                                        
+                                    </td>
+                                    <td>
+                                        {{stud.jmbg}}
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,70 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title">Predmeti koje slusam</h4>
+                    </div>
+                    <div class="card-body">
+                      <div class="table-responsive">
+                        <table class="table">
+                            <thead class=" text-primary">
+                                <th style="color:#7a7a52;">
+                                    ID
+                                </th>
+                                <th style="color:#7a7a52;">
+                                    Naziv
+                                </th>
+                                <th style="color:#7a7a52;">
+                                    Semestar
+                                </th>
+                                <th style="color:#7a7a52;">
+                                    ESPB
+                                </th>
+                                
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let sub of subjects">
+                                    <td>
+                                        {{sub.idPredmet}} 
+                                    </td>
+                                    <td>
+                                        {{sub.naziv}}
+                                    </td>
+                                    <td>
+                                        {{sub.espb}}
+                                    </td>
+                                    <td>
+                                        {{sub.semestar}}
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-profile">
+                    <div class="card-avatar">
+                        <a href="javascript:void(0)">
+                            <img class="img" src="./assets/img/logom.png" />
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-category text-gray">Student</h6>
+                        <h4 class="card-title">Pera Peric</h4>
+                        <p class="card-description">
+                            departman:Matematika i informatika<br>
+                            broj indexa:604/17<br>
+                            godina studija : 3<br>
+                            email adresa : pera.student@dmi.uns.ac.rs<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  

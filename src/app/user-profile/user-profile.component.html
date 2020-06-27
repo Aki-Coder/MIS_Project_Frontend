@@ -1,0 +1,75 @@
+<div class="main-content">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-8">
+              <div class="card">
+                  <div class="card-header card-header-danger">
+                      <h4 class="card-title">Moji predmeti</h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <table class="table">
+                          <thead class=" text-primary">
+                              <th style="color:#7a7a52;">
+                                  ID
+                              </th>
+                              <th style="color:#7a7a52;">
+                                  Naziv predmeta
+                              </th>
+                              <th style="color:#7a7a52;">
+                                  Semestar
+                              </th>
+                              <th style="color:#7a7a52;">
+                                  ESPB
+                              </th>
+                              <th style="color:#7a7a52;">
+                                  Prikaz studenata na predmetu 
+                              </th>
+                          </thead>
+                          <tbody>
+                              <tr *ngFor="let sub of subjects">
+                                  <td>
+                                      {{sub.idPredmet}}
+                                  </td>
+                                  <td>
+                                      {{sub.naziv}}
+                                  </td>
+                                  <td>
+                                      {{sub.espb}}
+                                  </td>
+                                  <td>
+                                      {{sub.semestar}}
+                                  </td>
+                                  <td>
+                                      <button class="button button5" (click)="getStudents(1,sub.naziv)">Prikazi</button>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card card-profile">
+                  <div class="card-avatar">
+                      <a href="javascript:void(0)">
+                          <img class="img" src="./assets/img/logo.png" />
+                      </a>
+                  </div>
+                  <div class="card-body">
+                      <h6 class="card-category text-gray">Profesor</h6>
+                      <h4 class="card-title">Danijela Boberic Krsticev</h4>
+                      <p class="card-description">
+                        kancelarija: novi deo / 8, zgrada DMI<br>
+                        telefon:	(485)-<br>
+                        e-mail:	dboberic@uns.ac.rs<br>
+                        lični sajt:	http://people.dmi.uns.ac.rs/~danijela.boberic<br>
+                        konsultacije:ponedeljak od 12.00 do 13.00 i sreda od 13.30 do 14.30<br>
+                      </p> 
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
